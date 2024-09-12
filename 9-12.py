@@ -44,17 +44,56 @@
 # print(stuff)# the mumber of the lists are read by lines 
 
 
-fhand=open('test1.txt')
+# fhand=open('test1.txt')
+# # for line in fhand:
+# #     print(line.rstrip())
+# #     if not line.startswith('From '):
+# #         continue
+# #     words=line.split()
+# #     print(words[3])
+
+# #double split
 # for line in fhand:
-#     print(line.rstrip())
-#     if not line.startswith('From '):
+#     words=line.split()#words is a string
+#     pieces=words[1].split('i')#pieces 
+#     print(pieces)
+
+
+
+# fh = open(r'C:\code\code-py\hw\romeo.txt')
+# lst=list()
+# lsto=str()
+# for line in fh:
+#     line=line.rstrip()
+#     lsto=lsto+line+' '
+# lst=lsto.split()
+# lst.sort()
+# print(lst)
+    
+
+
+
+# for line in fand:
+#     line=line.rstrip()
+#     if not line.startswith('From:'):
 #         continue
 #     words=line.split()
-#     print(words[3])
+#     print(words[1])
+# import chardet
 
-#double split
-for line in fhand:
-    words=line.split()#words is a string
-    pieces=words[1].split('i')#pieces 
-    print(pieces)
-    print(line.length())
+# # 读取文件内容并检测编码
+# with open(r'C:\code\code-py\hw\romeo.txt', 'rb') as f:
+#     raw_data = f.read()
+#     result = chardet.detect(raw_data)
+#     encoding = result['encoding']
+
+# # 使用检测到的编码方式打开文件
+# fand = open(r'C:\code\code-py\hw\romeo.txt', encoding=encoding)
+# data=open(r'C:\code\code-py\hw\mbox-short.txt',encoding='utf-8')
+
+# for line in data:
+#     line = line.rstrip()
+#     if not line.startswith('From:'):
+#         continue
+#     words = line.split()
+#     print(words[1])
