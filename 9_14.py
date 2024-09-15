@@ -32,7 +32,7 @@ for line in handle:
        
     else:
         continue
-print(names)
+
 
 bigcount=None
 bigword=None
